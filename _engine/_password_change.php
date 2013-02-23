@@ -1,0 +1,1 @@
+<?phpif( isset ($_GET['oldpass']) && isset ($_GET['newpass']) ){	if($_GET['oldpass'] == $_SESSION['password'])	{		$Player = player::changePassword($_GET['newpass']);		}	else	{		echo "Incorrect old password!";	}	}else	exit("Invalid request!");		?>
