@@ -1,0 +1,25 @@
+
+
+/*
+
+#page-wrap                      { width: 200px;}
+#chat-wrap                      { border: 1px solid #eee; margin: 0 0 5px 0; }
+#chat-area                      { height: 300px; overflow: auto; border: 1px solid #666; padding: 4px; background: white; }
+
+
+#chat-area span                 { color: white; background: #333; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 5px 0 0; }
+#chat-area p                    { padding: 8px 0; border-bottom: 1px solid #ccc; }
+
+#name-area                      { position: absolute; top: 12px; right: 0; color: white; font: bold 10px "Lucida Grande", Sans-Serif; text-align: right; }   
+#name-area span                 { color: #fa9f00; }
+
+#sendie                         { border: 3px solid #999; width: 200px; padding: 2px; font: 12px "Lucida Grande", Sans-Serif;  }
+
+
+*/
+
+
+#sendie { width: 155px; height: 30px;} 
+
+#chat-area span                 { color: white; background: #333; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 0px 0 0; }
+#chat-area p                    { height: 12px }

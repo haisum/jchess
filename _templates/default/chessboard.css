@@ -1,0 +1,506 @@
+
+blockquote, q {
+	quotes: none;
+}
+li , ol
+{
+    list-style: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#container{
+    width: 950px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#1, #2, #3, #4, #5, #6,#7,#8{
+    width: 520px;
+    height: 60px;
+   clear: left;
+   
+}
+.A, .B, .C , .D, .E, .F, .G, .H,.Column, #hiddenHelper{
+    width:62px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid black;
+    float:left;
+
+}
+.ui-draggable, .ui-draggable-dragging , #hiddenHelper{
+    cursor: pointer;
+    
+}
+.wrapper{
+    width: 515px;
+    height:496px;
+    float: left;
+    margin-top: 10px;
+    background-color: transparent;
+}
+.numberMarks{
+    width:8px;
+    float: left;
+    margin-top: 10px;
+}
+#leftColumn{
+    width: 180px;
+    float:left;    
+    margin: 10px;
+    background-color: transparent;
+}
+
+#rightColumn{
+    width:260px;
+    float: left;
+    height: 500px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.graveyard{
+    height: 128px;
+    width: 250px;
+    margin: 5px 5px 5px 10px;
+}
+.tomb{
+    display:block;
+    float:left;
+    height:63px;
+    margin-bottom:0;
+    margin-left:-16px;
+    margin-right:-16px;
+    margin-top:0;
+    width:63px;
+}
+.tomb div{
+    opacity: 0.5;
+    width:64px;
+    height: 64px;
+}
+#footer{
+    clear: both;
+    width: 965px;
+    margin: 5px 5px 5px 5px;
+    /*border: 1px solid black;*/
+    height: 40px;
+}
+div.chess_piece {
+  background-image: url(images/sprite.png);
+}
+div.chess_piece.pawn.white{
+  background-position: +0px +0px;
+}
+div.chess_piece.bishop.white{
+  background-position: -64px +0px;
+}
+div.chess_piece.knight.white{
+  background-position: -128px +0px;
+}
+div.chess_piece.rook.white{
+  background-position: -192px +0px;
+}
+div.chess_piece.queen.white{
+  background-position: -256px +0px;
+}
+div.chess_piece.king.white{
+  background-position: -320px +0px;
+}
+
+div.chess_piece.pawn.black{
+  background-position: +0px +64px;
+}
+div.chess_piece.bishop.black{
+  background-position: -64px +64px;
+}
+div.chess_piece.knight.black{
+  background-position: -128px +64px;
+}
+div.chess_piece.rook.black{
+  background-position: -192px +64px;
+}
+div.chess_piece.queen.black{
+  background-position: -256px +64px;
+}
+div.chess_piece.king.black{
+  background-position: -320px +64px;
+}
+#hiddenHelper{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+.flip{
+    background-image: url('images/exchange.png');
+    background-repeat: no-repeat;
+    height: 128px;
+    width: 128px;
+    cursor: pointer;
+    margin-left:10px;
+    float: left;
+    
+}
+#colorpicker{
+    background-position: center center;
+    background-repeat: repeat;
+    float: left;
+    margin-top: 45px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image:url("images/select.png");
+    cursor: pointer;
+}
+.chat{
+    clear: both;
+    padding-top: 7px;
+}
+.chatTalk{
+    background-color: #f0f0f0;
+    border-color: #CCCCCC;
+    width: 155px;
+    height: 330px;
+    margin: 5px;
+    margin-bottom: 0px;
+    border-width: 1px;
+    -moz-border-bottom-colors:none;
+    -moz-border-image:none;
+    -moz-border-left-colors:none;
+    -moz-border-right-colors:none;
+    -moz-border-top-colors:none;
+    border-bottom-color:#CCCCCC;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+
+    border-left-color-ltr-source:physical;
+    border-left-color-rtl-source:physical;
+    border-left-color-value:#CCCCCC;
+    border-left-style-ltr-source:physical;
+    border-left-style-rtl-source:physical;
+    border-left-style-value:solid;
+    border-left-width-ltr-source:physical;
+    border-left-width-rtl-source:physical;
+    border-left-width-value:1px;
+
+    border-right-color-ltr-source:physical;
+    border-right-color-rtl-source:physical;
+    border-right-color-value:#CCCCCC;
+    border-right-style-ltr-source:physical;
+    border-right-style-rtl-source:physical;
+    border-right-style-value:solid;
+    border-right-width-ltr-source:physical;
+    border-right-width-rtl-source:physical;
+    border-right-width-value:1px;
+
+    border-top-color:#CCCCCC;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    border-top-style:solid;
+    border-top-width:1px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:2px;
+}
+.chatTalk li{
+    font-size: 11px;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:transparent;
+    background-image:none;
+    background-origin:padding-box;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-size:auto auto;
+    margin-bottom:0.6em;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0.6em;
+    padding-left:18px;
+}
+.chatTalk li.white{
+    background-image:url("images/kw14.png");
+}
+.chatTalk li.black{
+    background-image:url("images/kb14.png");
+}
+.chatInput{
+    font-size: 11px;
+    width: 165px;
+    margin: 5px;
+    margin-top: 0px;
+    background-color: #f7f7f7;
+    border:none;
+    -moz-border-bottom-colors:none;
+    border-color: #CCCCCC;
+    -moz-border-image:none;
+    -moz-border-left-colors:none;
+    -moz-border-right-colors:none;
+    -moz-border-top-colors:none;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-image:none;
+    background-origin:padding-box;
+    background-position:0 0;
+    background-repeat:repeat;
+    background-size:auto auto;
+    border-bottom-color:#CCCCCC;
+    border-left-color:#CCCCCC;
+    border-right-color:#CCCCCC;
+
+
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+
+    border-left-color-ltr-source:physical;
+    border-left-color-rtl-source:physical;
+    border-left-color-value:#CCCCCC;
+    border-left-style-ltr-source:physical;
+    border-left-style-rtl-source:physical;
+    border-left-style-value:solid;
+    border-left-width-ltr-source:physical;
+    border-left-width-rtl-source:physical;
+    border-left-width-value:1px;
+
+    border-right-color-ltr-source:physical;
+    border-right-color-rtl-source:physical;
+    border-right-color-value:#CCCCCC;
+    border-right-style-ltr-source:physical;
+    border-right-style-rtl-source:physical;
+    border-right-style-value:solid;
+    border-right-width-ltr-source:physical;
+    border-right-width-rtl-source:physical;
+    border-right-width-value:1px;
+
+    border-top-color:-moz-use-text-color;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    border-top-style:none;
+    border-top-width:0;
+    padding-bottom:2px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:2px;
+}
+.messageDiv{
+    margin-top: 10px;
+    height: 180px;
+    width: 242px;
+    margin-left: 10px;
+}
+#whiteGraveyard{
+    margin-top:5px;
+}
+.sound{
+    display:none;
+}
+.status{
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+div.table {
+-moz-border-bottom-colors:none;
+-moz-border-image:none;
+-moz-border-left-colors:none;
+-moz-border-right-colors:none;
+-moz-border-top-colors:none;
+background-attachment:scroll;
+background-clip:border-box;
+background-color:#F7F7F7;
+background-image:none;
+background-origin:padding-box;
+background-position:0 0;
+background-repeat:repeat;
+background-size:auto auto;
+border-bottom-color:#CCCCCC;
+border-bottom-left-radius:4px;
+border-bottom-right-radius:4px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-left-color-ltr-source:physical;
+border-left-color-rtl-source:physical;
+border-left-color-value:#CCCCCC;
+border-left-style-ltr-source:physical;
+border-left-style-rtl-source:physical;
+border-left-style-value:solid;
+border-left-width-ltr-source:physical;
+border-left-width-rtl-source:physical;
+border-left-width-value:1px;
+border-right-color-ltr-source:physical;
+border-right-color-rtl-source:physical;
+border-right-color-value:#CCCCCC;
+border-right-style-ltr-source:physical;
+border-right-style-rtl-source:physical;
+border-right-style-value:solid;
+border-right-width-ltr-source:physical;
+border-right-width-rtl-source:physical;
+border-right-width-value:1px;
+border-top-color:#CCCCCC;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+border-top-style:solid;
+border-top-width:1px;
+height:auto;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+padding-top:10px;
+}
+div.table.spectator {
+top:160px;
+}
+
+div.clock {
+-moz-border-bottom-colors:none;
+-moz-border-image:none;
+-moz-border-left-colors:none;
+-moz-border-right-colors:none;
+-moz-border-top-colors:none;
+background-attachment:scroll;
+background-color:transparent;
+background-image:url("images/clock.png");
+background-position:5px 3px;
+background-repeat:no-repeat;
+font-family:monospace;
+font-size:14px;
+height:16px;
+margin-left:78px;
+padding-bottom:3px;
+padding-left:25px;
+padding-right:0;
+padding-top:3px;
+width:50px;
+}
+div.clock_running {
+background-color:#FAFAAA;
+font-weight:bold;
+}
+div.clock_outoftime {
+background-color:#EFAAAA;
+color:#444444;
+font-weight:bold;
+}
+div.clock_top {
+border-bottom-color:-moz-use-text-color;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border-bottom-style:none;
+border-bottom-width:0;
+border-top-left-radius:4px;
+border-top-right-radius:4px;
+}
+div.clock.running {
+background-color:#FAFAAA;
+font-weight:bold;
+}
+div.clock.outoftime {
+background-color:#EFAAAA;
+color:#444444;
+font-weight:bold;
+}
+div.table_next {
+top:145px;
+}
+div.separator {
+border-bottom-color:#DDDDDD;
+border-bottom-style:solid;
+border-bottom-width:1px;
+margin-bottom:10px;
+margin-left:0;
+margin-right:0;
+margin-top:10px;
+}
+div.current_player {
+height:64px;
+}
+div.current_player div.player {
+margin-left:-5px;
+position:absolute;
+}
+div.current_player div.player div.piece {
+left:0;
+top:0;
+}
+div.current_player div.player p {
+color:#888888;
+font-size:15px;
+font-weight:bold;
+height:64px;
+line-height:64px;
+margin-bottom:0;
+margin-left:64px;
+margin-right:0;
+margin-top:0;
+}
+p{
+
+
+/*
+    height: 64px;
+*/
+
+    vertical-align: middle;
+    padding-top: 12px;
+}
+div.table.finished div.player p {
+line-height:2em;
+margin-top:8px;
+}
+
+
+
+/*
+a, a:visited{
+color: #888888;
+cursor: pointer;
+text-decoration: underline;
+font-size: 8.5px;
+}
+a:hover{
+    text-decoration: none;
+}
+.control{
+    margin-top:20px;
+    clear: both;
+}
+
+*/
+
+
+div.chess_mark {
+color:#BBBBBB;
+font-size:11px;
+font-weight:bold;
+z-index:3000;
+text-transform:uppercase;
+}
