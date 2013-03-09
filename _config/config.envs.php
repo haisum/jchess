@@ -27,9 +27,9 @@
 		case 'haisum.info':
 				define('DB_HOST', 'localhost');
 				define('DB_PORT', 3306);
-				define('DB_USER', 'haisum_chesser');
-				define('DB_PASS', 'chesser1!');
-				define('DB_NAME', 'haisum_chess');
+				define('DB_USER', 'someuser');
+				define('DB_PASS', 'somepass');
+				define('DB_NAME', 'somedbname');
 				define('DB_PREFIX', '');						
 				define('REWRITE_MODE', 'apache_mod_rewrite'); // iis_isapi_rewrite, iis_url_rewrite, apache_mod_rewrite		
 				ini_set('error_reporting', NULL);        // error reporting
